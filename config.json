@@ -1,0 +1,15 @@
+{
+  "namespace": "github.com:vicjicaman/microservices.git",
+  "dependencies": {
+    "microservice-config": {
+      "version": "file:./../microservice-config"
+    }
+  },
+  "config": [
+    {
+      "name": "SERVICE_PATH",
+      "value": "/auth",
+      "type": "path"
+    }
+  ]
+}

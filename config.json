@@ -2,7 +2,7 @@
   "namespace": "github.com:vicjicaman/microservices.git",
   "dependencies": {
     "microservice-config": {
-      "version": "file:./../microservice-config"
+      "version": "1.70.0-auth-init-prod"
     }
   },
   "config": [

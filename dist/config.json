@@ -1,0 +1,6 @@
+{
+  "SERVICE_PATH": {
+    "value": "/auth",
+    "type": "path"
+  }
+}

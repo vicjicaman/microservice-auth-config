@@ -5,11 +5,60 @@
       "version": "1.70.1-master"
     }
   },
-  "config": [
-    {
+  "config": [{
       "name": "SERVICE_PATH",
-      "value": "/auth",
+      "value": "auth",
       "type": "path"
+    },
+    {
+      "name": "PATH_APP",
+      "value": "",
+      "type": "path"
+    },
+    {
+      "name": "PATH_URL_APP",
+      "value": "${SERVICE_PATH}",
+      "type": "path"
+    },
+    {
+      "name": "PORT_APP",
+      "value": 3000,
+      "type": "port"
+    },
+    {
+      "name": "PATH_GRAPH",
+      "value": "graphql",
+      "type": "path"
+    },
+    {
+      "name": "PATH_URL_GRAPH",
+      "value": "${SERVICE_PATH}/${PATH_GRAPH}",
+      "type": "path"
+    },
+    {
+      "name": "PORT_GRAPH",
+      "value": 4000,
+      "type": "port"
+    },
+    {
+      "name": "PATH_EVENTS",
+      "value": "events",
+      "type": "path"
+    },
+    {
+      "name": "PATH_URL_EVENTS",
+      "value": "${SERVICE_PATH}/${PATH_EVENTS}",
+      "type": "path"
+    },
+    {
+      "name": "PATH_DATA",
+      "value": "auth",
+      "type": "path"
+    },
+    {
+      "name": "PORT_DATA",
+      "value": 27017,
+      "type": "port"
     }
   ]
 }

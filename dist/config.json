@@ -1,6 +1,46 @@
 {
   "SERVICE_PATH": {
-    "value": "/auth",
+    "value": "auth",
     "type": "path"
+  },
+  "PATH_APP": {
+    "value": "",
+    "type": "path"
+  },
+  "PATH_URL_APP": {
+    "value": "auth",
+    "type": "path"
+  },
+  "PORT_APP": {
+    "value": 3000,
+    "type": "port"
+  },
+  "PATH_GRAPH": {
+    "value": "graphql",
+    "type": "path"
+  },
+  "PATH_URL_GRAPH": {
+    "value": "auth/graphql",
+    "type": "path"
+  },
+  "PORT_GRAPH": {
+    "value": 4000,
+    "type": "port"
+  },
+  "PATH_EVENTS": {
+    "value": "events",
+    "type": "path"
+  },
+  "PATH_URL_EVENTS": {
+    "value": "auth/events",
+    "type": "path"
+  },
+  "PATH_DATA": {
+    "value": "auth",
+    "type": "path"
+  },
+  "PORT_DATA": {
+    "value": 27017,
+    "type": "port"
   }
 }

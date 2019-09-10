@@ -3,6 +3,10 @@
     "value": "auth-data-service",
     "type": "id"
   },
+  "SERVICE_CACHE": {
+    "value": "auth-cache-service",
+    "type": "id"
+  },
   "SERVICE_GRAPH": {
     "value": "auth-graph-service",
     "type": "id"
@@ -21,6 +25,10 @@
   },
   "STATEFUL_DATA": {
     "value": "auth-data-set",
+    "type": "id"
+  },
+  "STATEFUL_CACHE": {
+    "value": "auth-cache-set",
     "type": "id"
   },
   "BASE_ROUTE": {
@@ -52,15 +60,15 @@
     "type": "port"
   },
   "INTERNAL_HOST_BACKEND": {
-    "value": "microservice-auth-graph-service.microservices-namespace",
+    "value": "auth-graph-service.microservices-namespace",
     "type": "host"
   },
   "INTERNAL_URL_GRAPH": {
-    "value": "microservice-auth-graph-service.microservices-namespace:4000/auth/backend/graphql",
+    "value": "auth-graph-service.microservices-namespace:4000/auth/backend/graphql",
     "type": "url"
   },
   "INTERNAL_URL_EVENTS": {
-    "value": "microservice-auth-graph-service.microservices-namespace:4000/auth/backend/events",
+    "value": "auth-graph-service.microservices-namespace:4000/auth/backend/events",
     "type": "url"
   },
   "EXTERNAL_URL_GRAPH": {
@@ -78,5 +86,21 @@
   "INTERNAL_PORT_DATA": {
     "value": 27017,
     "type": "port"
+  },
+  "INTERNAL_HOST_CACHE": {
+    "value": "auth-cache-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_PORT_CACHE": {
+    "value": 6379,
+    "type": "port"
+  },
+  "INTERNAL_URL_DATA": {
+    "value": "auth-data-service.microservices-namespace:27017/auth",
+    "type": "url"
+  },
+  "INTERNAL_URL_CACHE": {
+    "value": "auth-cache-service.microservices-namespace:6379",
+    "type": "url"
   }
 }

@@ -1,6 +1,106 @@
 {
-  "SERVICE_PATH": {
+  "SERVICE_DATA": {
+    "value": "auth-data-service",
+    "type": "id"
+  },
+  "SERVICE_CACHE": {
+    "value": "auth-cache-service",
+    "type": "id"
+  },
+  "SERVICE_GRAPH": {
+    "value": "auth-graph-service",
+    "type": "id"
+  },
+  "SERVICE_WEB": {
+    "value": "auth-web-service",
+    "type": "id"
+  },
+  "DEPLOYMENT_GRAPH": {
+    "value": "auth-graph-deployment",
+    "type": "id"
+  },
+  "DEPLOYMENT_WEB": {
+    "value": "auth-web-deployment",
+    "type": "id"
+  },
+  "STATEFUL_DATA": {
+    "value": "auth-data-set",
+    "type": "id"
+  },
+  "STATEFUL_CACHE": {
+    "value": "auth-cache-set",
+    "type": "id"
+  },
+  "BASE_ROUTE": {
     "value": "/auth",
     "type": "path"
+  },
+  "BASE_ROUTE_APP": {
+    "value": "/auth",
+    "type": "path"
+  },
+  "BASE_ROUTE_BACKEND": {
+    "value": "/auth/backend",
+    "type": "path"
+  },
+  "INTERNAL_PORT_APP": {
+    "value": 3000,
+    "type": "port"
+  },
+  "ROUTE_GRAPH": {
+    "value": "/auth/backend/graphql",
+    "type": "route"
+  },
+  "ROUTE_EVENTS": {
+    "value": "/auth/backend/events",
+    "type": "route"
+  },
+  "INTERNAL_PORT_GRAPH": {
+    "value": 4000,
+    "type": "port"
+  },
+  "INTERNAL_HOST_BACKEND": {
+    "value": "auth-graph-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_URL_GRAPH": {
+    "value": "auth-graph-service.microservices-namespace:4000/auth/backend/graphql",
+    "type": "url"
+  },
+  "INTERNAL_URL_EVENTS": {
+    "value": "auth-graph-service.microservices-namespace:4000/auth/backend/events",
+    "type": "url"
+  },
+  "EXTERNAL_URL_GRAPH": {
+    "value": "www.repoflow.com/auth/backend/graphql",
+    "type": "url"
+  },
+  "EXTERNAL_URL_EVENTS": {
+    "value": "www.repoflow.com/auth/backend/events",
+    "type": "url"
+  },
+  "INTERNAL_HOST_DATA": {
+    "value": "auth-data-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_PORT_DATA": {
+    "value": 27017,
+    "type": "port"
+  },
+  "INTERNAL_HOST_CACHE": {
+    "value": "auth-cache-service.microservices-namespace",
+    "type": "host"
+  },
+  "INTERNAL_PORT_CACHE": {
+    "value": 6379,
+    "type": "port"
+  },
+  "INTERNAL_URL_DATA": {
+    "value": "auth-data-service.microservices-namespace:27017/auth",
+    "type": "url"
+  },
+  "INTERNAL_URL_CACHE": {
+    "value": "auth-cache-service.microservices-namespace:6379",
+    "type": "url"
   }
 }

@@ -5,11 +5,133 @@
       "version": "1.70.1-master"
     }
   },
-  "config": [
+  "config": [{
+      "name": "SERVICE_DATA",
+      "value": "auth-data-service",
+      "type": "id"
+    }, {
+      "name": "SERVICE_CACHE",
+      "value": "auth-cache-service",
+      "type": "id"
+    }, {
+      "name": "SERVICE_GRAPH",
+      "value": "auth-graph-service",
+      "type": "id"
+    },
     {
-      "name": "SERVICE_PATH",
+      "name": "SERVICE_WEB",
+      "value": "auth-web-service",
+      "type": "id"
+    },
+    {
+      "name": "DEPLOYMENT_GRAPH",
+      "value": "auth-graph-deployment",
+      "type": "id"
+    },
+    {
+      "name": "DEPLOYMENT_WEB",
+      "value": "auth-web-deployment",
+      "type": "id"
+    },
+    {
+      "name": "STATEFUL_DATA",
+      "value": "auth-data-set",
+      "type": "id"
+    },
+    {
+      "name": "STATEFUL_CACHE",
+      "value": "auth-cache-set",
+      "type": "id"
+    },
+    {
+      "name": "BASE_ROUTE",
       "value": "/auth",
       "type": "path"
+    },
+    {
+      "name": "BASE_ROUTE_APP",
+      "value": "${BASE_ROUTE}",
+      "type": "path"
+    },
+    {
+      "name": "BASE_ROUTE_BACKEND",
+      "value": "${BASE_ROUTE}/backend",
+      "type": "path"
+    },
+    {
+      "name": "INTERNAL_PORT_APP",
+      "value": 3000,
+      "type": "port"
+    },
+    {
+      "name": "ROUTE_GRAPH",
+      "value": "${BASE_ROUTE_BACKEND}/graphql",
+      "type": "route"
+    },
+    {
+      "name": "ROUTE_EVENTS",
+      "value": "${BASE_ROUTE_BACKEND}/events",
+      "type": "route"
+    },
+    {
+      "name": "INTERNAL_PORT_GRAPH",
+      "value": 4000,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_HOST_BACKEND",
+      "value": "${SERVICE_GRAPH}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "INTERNAL_URL_GRAPH",
+      "value": "${INTERNAL_HOST_BACKEND}:${INTERNAL_PORT_GRAPH}${ROUTE_GRAPH}",
+      "type": "url"
+    },
+    {
+      "name": "INTERNAL_URL_EVENTS",
+      "value": "${INTERNAL_HOST_BACKEND}:${INTERNAL_PORT_GRAPH}${ROUTE_EVENTS}",
+      "type": "url"
+    },
+    {
+      "name": "EXTERNAL_URL_GRAPH",
+      "value": "${HOST@microservice-config}${ROUTE_GRAPH}",
+      "type": "url"
+    },
+    {
+      "name": "EXTERNAL_URL_EVENTS",
+      "value": "${HOST@microservice-config}${ROUTE_EVENTS}",
+      "type": "url"
+    },
+    {
+      "name": "INTERNAL_HOST_DATA",
+      "value": "${SERVICE_DATA}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "INTERNAL_PORT_DATA",
+      "value": 27017,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_HOST_CACHE",
+      "value": "${SERVICE_CACHE}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "INTERNAL_PORT_CACHE",
+      "value": 6379,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_URL_DATA",
+      "value": "${INTERNAL_HOST_DATA}:${INTERNAL_PORT_DATA}${BASE_ROUTE}",
+      "type": "url"
+    },
+    {
+      "name": "INTERNAL_URL_CACHE",
+      "value": "${INTERNAL_HOST_CACHE}:${INTERNAL_PORT_CACHE}",
+      "type": "url"
     }
   ]
 }

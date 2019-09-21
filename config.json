@@ -6,10 +6,6 @@
     }
   },
   "config": [{
-      "name": "SERVICE_CACHE",
-      "value": "auth-cache-service",
-      "type": "id"
-    }, {
       "name": "SERVICE_GRAPH",
       "value": "auth-graph-service",
       "type": "id"
@@ -27,11 +23,6 @@
     {
       "name": "DEPLOYMENT_WEB",
       "value": "auth-web-deployment",
-      "type": "id"
-    },
-    {
-      "name": "STATEFUL_CACHE",
-      "value": "auth-cache-set",
       "type": "id"
     },
     {
@@ -92,21 +83,6 @@
     {
       "name": "EXTERNAL_URL_EVENTS",
       "value": "${HOST@microservice-config}${ROUTE_EVENTS}",
-      "type": "url"
-    },
-    {
-      "name": "INTERNAL_HOST_CACHE",
-      "value": "${SERVICE_CACHE}.${NAMESPACE@microservice-config}",
-      "type": "host"
-    },
-    {
-      "name": "INTERNAL_PORT_CACHE",
-      "value": 6379,
-      "type": "port"
-    },
-    {
-      "name": "INTERNAL_URL_CACHE",
-      "value": "${INTERNAL_HOST_CACHE}:${INTERNAL_PORT_CACHE}",
       "type": "url"
     }
   ]

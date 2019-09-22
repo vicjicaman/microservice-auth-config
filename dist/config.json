@@ -1,8 +1,4 @@
 {
-  "SERVICE_CACHE": {
-    "value": "auth-cache-service",
-    "type": "id"
-  },
   "SERVICE_GRAPH": {
     "value": "auth-graph-service",
     "type": "id"
@@ -17,10 +13,6 @@
   },
   "DEPLOYMENT_WEB": {
     "value": "auth-web-deployment",
-    "type": "id"
-  },
-  "STATEFUL_CACHE": {
-    "value": "auth-cache-set",
     "type": "id"
   },
   "BASE_ROUTE": {
@@ -69,18 +61,6 @@
   },
   "EXTERNAL_URL_EVENTS": {
     "value": "www.repoflow.com/auth/backend/events",
-    "type": "url"
-  },
-  "INTERNAL_HOST_CACHE": {
-    "value": "auth-cache-service.microservices-namespace",
-    "type": "host"
-  },
-  "INTERNAL_PORT_CACHE": {
-    "value": 6379,
-    "type": "port"
-  },
-  "INTERNAL_URL_CACHE": {
-    "value": "auth-cache-service.microservices-namespace:6379",
     "type": "url"
   }
 }

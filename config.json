@@ -7,6 +7,10 @@
   },
   "config": [
     {
+      "name": "CACHE_SECRET_NAME",
+      "value": "auth-cache-secret"
+    },
+    {
       "name": "AUTH_BASE_ROUTE",
       "value": "/auth",
       "type": "path"

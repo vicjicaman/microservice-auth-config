@@ -1,4 +1,8 @@
 {
+  "CACHE_SECRET_NAME": {
+    "value": "auth-cache-secret",
+    "type": null
+  },
   "AUTH_BASE_ROUTE": {
     "value": "/auth",
     "type": "path"

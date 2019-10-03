@@ -60,7 +60,7 @@
     "type": "route"
   },
   "DATA_INTERNAL_URL": {
-    "value": "http://auth-data-service.microservices-namespace:27017/auth",
+    "value": "auth-data-service.microservices-namespace:27017/auth",
     "type": "url"
   },
   "CACHE_SERVICE_NAME": {

@@ -1,66 +1,98 @@
 {
-  "SERVICE_GRAPH": {
+  "AUTH_BASE_ROUTE": {
+    "value": "/auth",
+    "type": "path"
+  },
+  "GRAPH_SERVICE_NAME": {
     "value": "auth-graph-service",
     "type": "id"
   },
-  "SERVICE_WEB": {
-    "value": "auth-web-service",
-    "type": "id"
-  },
-  "DEPLOYMENT_GRAPH": {
-    "value": "auth-graph-deployment",
-    "type": "id"
-  },
-  "DEPLOYMENT_WEB": {
-    "value": "auth-web-deployment",
-    "type": "id"
-  },
-  "BASE_ROUTE": {
-    "value": "/auth",
-    "type": "path"
-  },
-  "BASE_ROUTE_APP": {
-    "value": "/auth",
-    "type": "path"
-  },
-  "BASE_ROUTE_BACKEND": {
+  "BACKEND_BASE_ROUTE": {
     "value": "/auth/backend",
     "type": "path"
   },
-  "INTERNAL_PORT_APP": {
-    "value": 3000,
-    "type": "port"
-  },
-  "ROUTE_GRAPH": {
+  "GRAPH_BASE_ROUTE": {
     "value": "/auth/backend/graphql",
     "type": "route"
   },
-  "ROUTE_EVENTS": {
-    "value": "/auth/backend/events",
-    "type": "route"
-  },
-  "INTERNAL_PORT_GRAPH": {
+  "GRAPH_INTERNAL_PORT": {
     "value": 4000,
     "type": "port"
   },
-  "INTERNAL_HOST_BACKEND": {
+  "WEB_SERVICE_NAME": {
+    "value": "auth-web-service",
+    "type": "id"
+  },
+  "WEB_BASE_ROUTE": {
+    "value": "/auth",
+    "type": "path"
+  },
+  "WEB_INTERNAL_PORT": {
+    "value": 3000,
+    "type": "port"
+  },
+  "BACKEND_INTERNAL_HOST": {
     "value": "auth-graph-service.microservices-namespace",
     "type": "host"
   },
-  "INTERNAL_URL_GRAPH": {
-    "value": "auth-graph-service.microservices-namespace:4000/auth/backend/graphql",
+  "GRAPH_INTERNAL_URL": {
+    "value": "http://auth-graph-service.microservices-namespace:4000/auth/backend/graphql",
     "type": "url"
   },
-  "INTERNAL_URL_EVENTS": {
-    "value": "auth-graph-service.microservices-namespace:4000/auth/backend/events",
+  "GRAPH_EXTERNAL_URL": {
+    "value": "https://www.repoflow.com/auth/backend/graphql",
     "type": "url"
   },
-  "EXTERNAL_URL_GRAPH": {
-    "value": "www.repoflow.com/auth/backend/graphql",
+  "DATA_SERVICE_NAME": {
+    "value": "auth-data-service",
+    "type": "id"
+  },
+  "DATA_INTERNAL_HOST": {
+    "value": "auth-data-service.microservices-namespace",
+    "type": "host"
+  },
+  "DATA_INTERNAL_PORT": {
+    "value": 27017,
+    "type": "port"
+  },
+  "DATA_BASE_ROUTE": {
+    "value": "/auth",
+    "type": "route"
+  },
+  "DATA_INTERNAL_URL": {
+    "value": "auth-data-service.microservices-namespace:27017/auth",
     "type": "url"
   },
-  "EXTERNAL_URL_EVENTS": {
-    "value": "www.repoflow.com/auth/backend/events",
+  "CACHE_SERVICE_NAME": {
+    "value": "auth-cache-service",
+    "type": "id"
+  },
+  "CACHE_INTERNAL_HOST": {
+    "value": "auth-cache-service.microservices-namespace",
+    "type": "host"
+  },
+  "CACHE_INTERNAL_PORT": {
+    "value": 6379,
+    "type": "port"
+  },
+  "ACCOUNT_GRAPH_SERVICE_NAME": {
+    "value": "auth-account-graph-service",
+    "type": "id"
+  },
+  "ACCOUNT_GRAPH_INTERNAL_HOST": {
+    "value": "auth-account-graph-service.microservices-namespace",
+    "type": "host"
+  },
+  "ACCOUNT_GRAPH_BASE_ROUTE": {
+    "value": "/graphql",
+    "type": "route"
+  },
+  "ACCOUNT_GRAPH_INTERNAL_PORT": {
+    "value": 4000,
+    "type": "port"
+  },
+  "ACCOUNT_GRAPH_INTERNAL_URL": {
+    "value": "http://auth-account-graph-service.microservices-namespace:4000/graphql",
     "type": "url"
   }
 }

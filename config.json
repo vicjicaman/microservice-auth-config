@@ -7,8 +7,16 @@
   },
   "config": [
     {
+      "name": "DATA_NAME",
+      "value": "accounts"
+    },
+    {
       "name": "CACHE_SECRET_NAME",
       "value": "auth-cache-secret"
+    },
+    {
+      "name": "DATA_SECRET_NAME",
+      "value": "auth-data-secret"
     },
     {
       "name": "AUTH_BASE_ROUTE",
@@ -87,7 +95,7 @@
     },
     {
       "name": "DATA_INTERNAL_URL",
-      "value": "${DATA_INTERNAL_HOST}:${DATA_INTERNAL_PORT}${DATA_BASE_ROUTE}",
+      "value": "${DATA_INTERNAL_HOST}:${DATA_INTERNAL_PORT}",
       "type": "url"
     },
     {

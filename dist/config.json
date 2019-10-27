@@ -1,6 +1,14 @@
 {
+  "DATA_NAME": {
+    "value": "accounts",
+    "type": null
+  },
   "CACHE_SECRET_NAME": {
     "value": "auth-cache-secret",
+    "type": null
+  },
+  "DATA_SECRET_NAME": {
+    "value": "auth-data-secret",
     "type": null
   },
   "AUTH_BASE_ROUTE": {
@@ -64,7 +72,7 @@
     "type": "route"
   },
   "DATA_INTERNAL_URL": {
-    "value": "auth-data-service.microservices-namespace:27017/auth",
+    "value": "auth-data-service.microservices-namespace:27017",
     "type": "url"
   },
   "CACHE_SERVICE_NAME": {

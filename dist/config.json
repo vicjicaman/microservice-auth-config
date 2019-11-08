@@ -44,15 +44,15 @@
     "type": "port"
   },
   "BACKEND_INTERNAL_HOST": {
-    "value": "auth-graph-service.microservices-namespace",
+    "value": "auth-graph-service.repoflow-blog-namespace",
     "type": "host"
   },
   "GRAPH_INTERNAL_URL": {
-    "value": "http://auth-graph-service.microservices-namespace:4000/auth/backend/graphql",
+    "value": "http://auth-graph-service.repoflow-blog-namespace:4000/auth/backend/graphql",
     "type": "url"
   },
   "GRAPH_EXTERNAL_URL": {
-    "value": "https://www.repoflow.com/auth/backend/graphql",
+    "value": "https://blog.repoflow.com/auth/backend/graphql",
     "type": "url"
   },
   "DATA_SERVICE_NAME": {
@@ -60,7 +60,7 @@
     "type": "id"
   },
   "DATA_INTERNAL_HOST": {
-    "value": "auth-data-service.microservices-namespace",
+    "value": "auth-data-service.repoflow-blog-namespace",
     "type": "host"
   },
   "DATA_INTERNAL_PORT": {
@@ -72,7 +72,7 @@
     "type": "route"
   },
   "DATA_INTERNAL_URL": {
-    "value": "auth-data-service.microservices-namespace:27017",
+    "value": "auth-data-service.repoflow-blog-namespace:27017",
     "type": "url"
   },
   "CACHE_SERVICE_NAME": {
@@ -80,7 +80,7 @@
     "type": "id"
   },
   "CACHE_INTERNAL_HOST": {
-    "value": "auth-cache-service.microservices-namespace",
+    "value": "auth-cache-service.repoflow-blog-namespace",
     "type": "host"
   },
   "CACHE_INTERNAL_PORT": {
@@ -92,7 +92,7 @@
     "type": "id"
   },
   "ACCOUNT_GRAPH_INTERNAL_HOST": {
-    "value": "auth-account-graph-service.microservices-namespace",
+    "value": "auth-account-graph-service.repoflow-blog-namespace",
     "type": "host"
   },
   "ACCOUNT_GRAPH_BASE_ROUTE": {
@@ -104,7 +104,7 @@
     "type": "port"
   },
   "ACCOUNT_GRAPH_INTERNAL_URL": {
-    "value": "http://auth-account-graph-service.microservices-namespace:4000/graphql",
+    "value": "http://auth-account-graph-service.repoflow-blog-namespace:4000/graphql",
     "type": "url"
   }
 }
